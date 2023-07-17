@@ -10,6 +10,7 @@ class Assignment(models.Model):
     academic_id = models.ForeignKey(Academic, on_delete=models.CASCADE)
     course_id = models.ForeignKey(Course, on_delete=models.CASCADE)
     organization_id = models.ForeignKey(Organization, on_delete=models.CASCADE)
+    teacher_id = models.ForeignKey(Teacher, on_delete=models.CASCADE)
     assignment_created = models.DateTimeField()
     assignment_modified = models.DateTimeField()
     assignment_status = models.BooleanField()
