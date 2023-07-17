@@ -1,10 +1,10 @@
 from django.db import models
-import UUIDfied
+import uuid
 
 from . import *
 
 class Teacher(models.Model):
-    teacher_id = models.UUIDfied(
+    teacher_id = models.UUIDfield(
         primary_key = True,
         default = uuid.uuid4,
         editable = False
