@@ -2,7 +2,7 @@ from django.db import models
 import uuid
 from . import *
 
-class Group(models.Model):
+class Student(models.Model):
     student_id = models.UUIDField(
         primary_key = True,
         default = uuid.uuid4,
