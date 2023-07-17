@@ -1,6 +1,9 @@
 from django.db import models
 import uuid
-from . import *
+from .Student import Student
+from .Group import Group 
+from .Organization import Organization 
+
 
 class Enroll(models.Model):
     enroll_id = models.UUIDField(

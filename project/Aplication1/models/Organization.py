@@ -1,4 +1,6 @@
 from django.db import models
+import uuid
+from . import *
 
 class Organization(models.Model):
     organization_id = models.UUIDField(

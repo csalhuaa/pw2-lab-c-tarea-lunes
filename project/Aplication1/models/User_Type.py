@@ -1,4 +1,5 @@
 from django.db import models
+import uuid
 
 class User_Type(models.Model):
     user_type_id = models.UUIDField(

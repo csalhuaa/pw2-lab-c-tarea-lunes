@@ -1,6 +1,8 @@
 from django.db import models
 import uuid
-from . import *
+from .Assignment import Assignment
+from .Organization import Organization 
+from .Teacher import Teacher 
 
 class Group(models.Model):
     group_id = models.UUIDField(
@@ -13,5 +15,5 @@ class Group(models.Model):
     teacher_id = models.ForeignKey(Teacher, on_delete=models.CASCADE)
     group_created = models.DateTimeField()
     group_modified = models.DateTimeField()
-    group_name = models.CharField()
+    group_name = models.CharField(max_length=255)
     group_status = models.BooleanField()

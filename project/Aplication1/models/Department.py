@@ -1,6 +1,6 @@
 from django.db import models
 import uuid
-from . import *
+from .Organization import Organization 
 
 class Department(models.Model):
     department_id = models.UUIDField(
@@ -10,5 +10,5 @@ class Department(models.Model):
     organization_id = models.ForeignKey(Organization, on_delete=models.CASCADE)
     department_created = models.DateTimeField()
     department_modified = models.DateTimeField()
-    department_name = models.CharField()
+    department_name = models.CharField(max_length=255)
     department_status = models.BooleanField()

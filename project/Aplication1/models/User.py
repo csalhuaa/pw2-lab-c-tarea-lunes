@@ -1,6 +1,6 @@
 from django.db import models
 import uuid
-from . import *
+from .User_Type import User_Type
 
 class User(models.Model):
     user_id = models.UUIDField(
@@ -11,6 +11,6 @@ class User(models.Model):
     user_dni = models.IntegerField()
     user_dob = models.DateField()
     user_email = models.EmailField()
-    user_last_name = models.CharField()
-    user_name = models.CharField()
-    user_password = models.CharField()
+    user_last_name = models.CharField(max_length=255)
+    user_name = models.CharField(max_length=255)
+    user_password = models.CharField(max_length=255)

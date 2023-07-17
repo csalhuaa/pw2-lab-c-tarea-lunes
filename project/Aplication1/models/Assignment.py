@@ -1,6 +1,9 @@
 from django.db import models
 import uuid
-from . import *
+from .Academic import Academic
+from .Course import Course
+from .Organization import Organization
+from .Teacher import Teacher 
 
 class Assignment(models.Model):
     assignment_id = models.UUIDField(

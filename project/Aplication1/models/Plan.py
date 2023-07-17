@@ -1,4 +1,5 @@
 from django.db import models
+import uuid
 from .Organization import Organization
 
 class Plan(models.Model):

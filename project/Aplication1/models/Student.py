@@ -1,6 +1,8 @@
 from django.db import models
 import uuid
-from . import *
+from .Organization import Organization
+from .School import School
+from .User import User
 
 class Student(models.Model):
     student_id = models.UUIDField(
